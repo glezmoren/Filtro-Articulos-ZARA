@@ -1,7 +1,7 @@
 @import '_reset';
 
 .header{
-    padding: 2rem 0;
+    padding: 2rem 0 8rem 0;
     &__wrapper{
         width: 98%;
         margin: auto;
@@ -12,7 +12,6 @@
     }
     &__izq{
         width: 30%;
-        background-color: deeppink;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -26,7 +25,6 @@
     }
     &__filtro{
         width: 16%;
-        background-color: aquamarine;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -37,6 +35,13 @@
         margin: 0 0.6rem;
     
     }
+    &__button{
+        cursor: pointer;
+    }
+    &__button.activo{
+        font-weight: 700;
+    }
+
     &__buscar{
         width: 4%;
         border-bottom: 1px solid black;
@@ -55,5 +60,24 @@
     }
     &__svgelement{
         width: 1.6rem;
+    }
+}
+.zara{
+    &__wrapper{
+        width: 98%;
+        margin: auto;
+        
+    }
+    &__grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__a{
+        margin: 0.8rem;
+    }
+    &__a.ocultar{
+        display: none;
     }
 }

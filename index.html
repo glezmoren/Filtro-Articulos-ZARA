@@ -17,11 +17,11 @@
                 <h1 class="header__h1"><a href="https://www.zara.com/es/" title="ZARA España, Ir a la página principal de Zara" class="header__alogo"><svg aria-label="Logotipo de ZARA España. Ir a la página principal" class="header__svglogo" viewBox="0 0 132 55" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M105.673.035l19.557 53.338 6.77.002v.383h-21.548v-.383h6.344l-6.431-17.54H97.311v.007l.07.204c.521 1.548.78 3.17.764 4.803v6.575c0 3.382 1.494 6.81 4.347 6.81 1.675 0 3.012-.59 4.604-2.046l.227.211C105.594 54.224 103.5 55 100.36 55c-2.37 0-4.398-.57-6.03-1.693l-.309-.222c-2.148-1.624-3.542-4.278-4.142-7.89l-.096-.583-.1-.882-.01-.152-3.599 9.792h5.107v.384H80.496v-.384h5.162l3.951-10.753v-.023a34.924 34.924 0 0 1-.075-1.906v-4.693c0-5.77-4.29-9.08-11.771-9.08H70.41v26.458h6.371v.383h-24.9v-.383h6.345l-6.431-17.54H33.948l-6.371 17.346.266-.044c8.366-1.442 12.213-7.827 12.265-14.55h.388v15.171H0L30.06 2.185H17.972C7.954 2.185 3.42 9.922 3.35 17.635h-.387V1.8h36.488l-.222.385L9.396 53.373h15.695c.39 0 .778-.019 1.169-.05.26-.018.522-.044.788-.077l.095-.01L46.703 0h.387l.013.035 15.369 41.916V2.185h-6.328v-.39h21.778c10.467 0 17.774 5.372 17.774 13.068 0 5.612-5.005 10.27-12.45 11.595l-1.367.174 1.377.14c4.515.517 8.1 1.906 10.641 4.127l.017.016L105.273 0h.386l.014.035zm-8.552 35.32l.038.094h13.061l-8.773-23.928-7.221 19.67.039.037.367.364a11.876 11.876 0 0 1 2.489 3.762zM70.415 26.53V2.185h5.611c7.496 0 11.454 4.414 11.454 12.76 0 8.877-2.272 11.585-9.717 11.585h-7.348zM42.882 11.521L34.09 35.45h17.565L42.882 11.52z"></path></svg></a></h1>
             </div>
             <ul class="header__filtro">
-                <li class="header__li"><button class="header__button">Ver todo</button></li>
-                <li class="header__li"><button class="header__button">Cortos</button></li>
-                <li class="header__li"><button class="header__button">Midi</button></li>
-                <li class="header__li"><button class="header__button">Largos</button></li>
-                <li class="header__li"><button class="header__button">Monos</button></li>
+                <li class="header__li"><button class="header__button activo" id="todo">Ver todo</button></li>
+                <li class="header__li"><button class="header__button" id="cortos">Cortos</button></li>
+                <li class="header__li"><button class="header__button" id="midi">Midi</button></li>
+                <li class="header__li"><button class="header__button" id="largos">Largos</button></li>
+                <li class="header__li"><button class="header__button" id="monos">Monos</button></li>
             </ul>
             <div class="header__buscar"><a href="https://www.zara.com/es/es/search" class="header__abuscar" title="ZARA España, Ir a la página de búsqueda de artículos de Zara">Buscar</a></div>
             <nav class="header__nav">
@@ -37,22 +37,22 @@
         <div class="zara">
             <div class="zara__wrapper">
                 <ul class="zara__grid">
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/rosa_corto.jpg" alt="VESTIDO MINI PUNTO" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/naranja_midi.jpg" alt="VESTIDO BORDADOS PERFORADOS CINTURON" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/verde_largo.jpg" alt="VESTIDO SATINADO ENCAJE" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/negro_corto.jpg" alt="VESTIDO MINI" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/beige_midi.jpg" alt="VESTIDO MIDI TIRANTES" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/azul_mono.jpg" alt="PETO DENIM WIDE LEG" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/amarillo_mono.jpg" alt="PETO PESPUNTES" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/negro_largo.jpg" alt="VESTIDO PUNTO FLECOS" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/naranja_corto.jpg" alt="VESTIDO SATINADO" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/rosa_midi.jpg" alt="VESTIDO SATINADO CUT OUT" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/caqui_largo.jpg" alt="VESTIDO LARGO SATINADO" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/blanco_mono.jpg" alt="MONO CUT OUT LATERAL" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/amarillo_corto.jpg" alt="VESTIDO VOLUMEN FRUNCES" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/rosa_mono.jpg" alt="MONO SATINADO CUT OUT" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/verde_midi.jpg" alt="VESTIDO FRUNCE" class="zara__img" loading="lazy"></a></li>
-                    <li class="zara__li"><a href="" class="zara__a"><img src="assets/naranja_largo.jpg" alt="VESTIDO LARGO RED" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a corto"><img src="assets/rosa_corto.jpg" alt="VESTIDO MINI PUNTO" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a midi"><img src="assets/naranja_midi.jpg" alt="VESTIDO BORDADOS PERFORADOS CINTURON" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a largo"><img src="assets/verde_largo.jpg" alt="VESTIDO SATINADO ENCAJE" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a corto"><img src="assets/negro_corto.jpg" alt="VESTIDO MINI" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a midi"><img src="assets/beige_midi.jpg" alt="VESTIDO MIDI TIRANTES" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a mono"><img src="assets/azul_mono.jpg" alt="PETO DENIM WIDE LEG" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a mono"><img src="assets/amarillo_mono.jpg" alt="PETO PESPUNTES" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a largo"><img src="assets/negro_largo.jpg" alt="VESTIDO PUNTO FLECOS" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a corto"><img src="assets/naranja_corto.jpg" alt="VESTIDO SATINADO" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a midi"><img src="assets/rosa_midi.jpg" alt="VESTIDO SATINADO CUT OUT" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a largo"><img src="assets/caqui_largo.jpg" alt="VESTIDO LARGO SATINADO" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a mono"><img src="assets/blanco_mono.jpg" alt="MONO CUT OUT LATERAL" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a corto"><img src="assets/amarillo_corto.jpg" alt="VESTIDO VOLUMEN FRUNCES" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a mono"><img src="assets/rosa_mono.jpg" alt="MONO SATINADO CUT OUT" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a midi"><img src="assets/verde_midi.jpg" alt="VESTIDO FRUNCE" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li"><a href="" class="zara__a largo"><img src="assets/naranja_largo.jpg" alt="VESTIDO LARGO RED" class="zara__img" loading="lazy"></a></li>
                 </ul>
             </div>
         </div>

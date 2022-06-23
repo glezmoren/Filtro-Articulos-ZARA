@@ -95,7 +95,7 @@ body {
 }
 
 .header {
-  padding: 2rem 0;
+  padding: 2rem 0 8rem 0;
 }
 .header__wrapper {
   width: 98%;
@@ -116,7 +116,6 @@ body {
 }
 .header__izq {
   width: 30%;
-  background-color: deeppink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +138,6 @@ body {
 }
 .header__filtro {
   width: 16%;
-  background-color: aquamarine;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +154,12 @@ body {
 }
 .header__li {
   margin: 0 0.6rem;
+}
+.header__button {
+  cursor: pointer;
+}
+.header__button.activo {
+  font-weight: 700;
 }
 .header__buscar {
   width: 4%;
@@ -181,4 +185,30 @@ body {
 }
 .header__svgelement {
   width: 1.6rem;
+}
+
+.zara__wrapper {
+  width: 98%;
+  margin: auto;
+}
+.zara__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.zara__a {
+  margin: 0.8rem;
+}
+.zara__a.ocultar {
+  display: none;
 }
