@@ -72,6 +72,7 @@ form, input, textarea, select, button, label {
   background-color: transparent;
   color: inherit;
   display: block;
+  text-transform: uppercase;
 }
 
 table, tr, td {
@@ -88,6 +89,96 @@ svg {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: black;
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 2rem 0;
+}
+.header__wrapper {
+  width: 98%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header__izq {
+  width: 30%;
+  background-color: deeppink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header__svghamburguesa {
+  width: 2rem;
+}
+.header__h1 {
+  width: 24rem;
+}
+.header__filtro {
+  width: 16%;
+  background-color: aquamarine;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9rem 0 0 0;
+}
+.header__li {
+  margin: 0 0.6rem;
+}
+.header__buscar {
+  width: 4%;
+  border-bottom: 1px solid black;
+}
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header__aelement {
+  margin: 0 1.4rem;
+}
+.header__svgelement {
+  width: 1.6rem;
 }

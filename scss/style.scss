@@ -1,1 +1,59 @@
 @import '_reset';
+
+.header{
+    padding: 2rem 0;
+    &__wrapper{
+        width: 98%;
+        margin: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__izq{
+        width: 30%;
+        background-color: deeppink;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__svghamburguesa{
+        width: 2rem;
+    }
+    &__h1{
+        width: 24rem;
+    }
+    &__filtro{
+        width: 16%;
+        background-color: aquamarine;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 9rem 0 0 0;
+    }
+    &__li{
+        margin: 0 0.6rem;
+    
+    }
+    &__buscar{
+        width: 4%;
+        border-bottom: 1px solid black;
+    }
+    &__abuscar{
+    
+    }
+    &__ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__aelement{
+        margin: 0 1.4rem;
+    }
+    &__svgelement{
+        width: 1.6rem;
+    }
+}
