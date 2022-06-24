@@ -240,6 +240,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.zara__popup.activo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .zara__fondo {
   width: 100%;
   min-height: 100vh;

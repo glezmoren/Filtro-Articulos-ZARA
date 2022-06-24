@@ -102,6 +102,10 @@
         align-items: center;
     }
 
+    &__popup.activo{
+        display: flex;
+    }
+
     &__fondo{
         width: 100%;
         min-height: 100vh;

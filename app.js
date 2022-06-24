@@ -94,10 +94,31 @@ for (let i=0; i < listaImg.length; i ++){
         
         console.log( this )
 
+        let nodoPopup = document.querySelector( '.zara__popup');
+        nodoPopup.classList.add ('activo');
+
+        let nodoSrc = this.querySelector('src');
+        console.log (nodoSrc)
+
+        
+
+        let strHTML = `<div class="zara__fondo"></div><img`+ this +  `alt="" class="zara__grande">`;
+        
+        //tengo que cambiar el src
+       
+    
+        pintarWeb (strHTML, '#popup')
+
     });
     
 
 };
+
+function pintarWeb(mensaje, identificador) {
+    let nodoDatos = document.querySelector(identificador);
+    console.log(nodoDatos);
+    nodoDatos.innerHTML = mensaje;
+  }
 
 
 
