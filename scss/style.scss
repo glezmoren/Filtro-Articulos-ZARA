@@ -2,6 +2,9 @@
 
 .header{
     padding: 2rem 0 8rem 0;
+    @media screen and (max-width: 1400px) {
+        padding: 2rem 0 4rem 0;
+    }
     &__wrapper{
         width: 98%;
         margin: auto;
@@ -22,17 +25,20 @@
     }
     &__h1{
         width: 24rem;
-    }
+
+        @media screen and (max-width: 1400px) {
+            width: 14rem;
+        }
+    } 
     &__filtro{
-        width: 16%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         padding: 9rem 0 0 0;
     }
     &__li{
-        margin: 0 0.6rem;
+        margin: 0.3rem 0.6rem;
     
     }
     &__button{
@@ -74,10 +80,12 @@
         justify-content: center;
         align-items: center;
     }
+
     &__a{
         margin: 0.8rem;
     }
-    &__a.ocultar{
+    
+    & .ocultar{
         display: none;
     }
 }

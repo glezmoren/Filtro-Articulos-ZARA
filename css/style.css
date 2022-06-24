@@ -97,6 +97,11 @@ body {
 .header {
   padding: 2rem 0 8rem 0;
 }
+@media screen and (max-width: 1400px) {
+  .header {
+    padding: 2rem 0 4rem 0;
+  }
+}
 .header__wrapper {
   width: 98%;
   margin: auto;
@@ -136,8 +141,12 @@ body {
 .header__h1 {
   width: 24rem;
 }
+@media screen and (max-width: 1400px) {
+  .header__h1 {
+    width: 14rem;
+  }
+}
 .header__filtro {
-  width: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,15 +154,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 9rem 0 0 0;
 }
 .header__li {
-  margin: 0 0.6rem;
+  margin: 0.3rem 0.6rem;
 }
 .header__button {
   cursor: pointer;
@@ -209,6 +219,6 @@ body {
 .zara__a {
   margin: 0.8rem;
 }
-.zara__a.ocultar {
+.zara .ocultar {
   display: none;
 }
