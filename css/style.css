@@ -197,6 +197,9 @@ body {
   width: 1.6rem;
 }
 
+.zara {
+  position: relative;
+}
 .zara__wrapper {
   width: 98%;
   margin: auto;
@@ -221,4 +224,36 @@ body {
 }
 .zara .ocultar {
   display: none;
+}
+.zara__popup {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.zara__fondo {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.zara__grande {
+  width: 200px;
+  height: 400px;
+  background-color: hotpink;
+  position: relative;
+  z-index: 2;
 }

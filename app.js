@@ -83,6 +83,23 @@ nodoTodo.addEventListener( 'click' , function(){
     añadirNegrita( '.header__button', 'activo' , this );
 });
 
+//Quiero que cuando haga clic en la imagen me abra un pop up de ESA imagen
+let listaImg = document.querySelectorAll ('.zara__img' );
+console.log( listaImg )
+
+for (let i=0; i < listaImg.length; i ++){
+    //CREAR un evento para cada cuadrado -> Todos los cuadrados
+    listaImg[ i ].addEventListener('click', function(){
+        console.log( 'Clic en la imagen' );
+        
+        console.log( this )
+
+    });
+    
+
+};
+
+
 
 //hago una función que me añada la negrita con los parametros: etiqueta (para seleccionar las etiqueta a la que quiero acceder) la clase (que quiero primero quitar a todas y cada una de ellas y luego añadir a la que clico) y el button (es el this, para que me funcione y acceda al que clico tengo que ponerlo como parámetro porque la función esta aparte definida porque la quiero reutilizar y no puede acceder al clic)
 function añadirNegrita( etiqueta, clase ,button){

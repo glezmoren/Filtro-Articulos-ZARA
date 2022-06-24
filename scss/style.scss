@@ -69,6 +69,7 @@
     }
 }
 .zara{
+    position: relative;
     &__wrapper{
         width: 98%;
         margin: auto;
@@ -87,5 +88,37 @@
     
     & .ocultar{
         display: none;
+    }
+
+    &__popup{
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__fondo{
+        width: 100%;
+        min-height: 100vh;
+        background-color: black;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    &__grande{
+        width: 200px;
+        height: 400px;
+        background-color: hotpink;
+        position: relative;
+        z-index: 2;
     }
 }
