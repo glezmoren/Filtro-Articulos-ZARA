@@ -109,15 +109,24 @@ for (let i=0; i < listaImg.length; i ++){
         
         //con this ya tengo la imagen que clico y ahora tengo que cambiar el atributo de la imagen que voy a pintar por el atriburo de la imagen que clico
         //cojo el atributo src de la imagen que clicamos (this)
-        let nodoSrc = this.getAttribute('src');
-        console.log (nodoSrc)
+        let src_imagen = this.getAttribute('src');
+        console.log (src_imagen)
+
+        let nodoImgPopUp = document.querySelector( '.zara__grande' );
+        nodoImgPopUp.src = src_imagen;
 
         //añado el atributro src a la cadena de texto para pintarla
         // let strHTML = `<div class="zara__fondo">${ itemSeleccionado.title} </div><img src="`+ nodoSrc +`" alt="" class="zara__grande"><svg xmlns="http://www.w3.org/2000/svg"  class="zara__close" viewBox="0 0 16 16">
         // <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
         // </svg>`;
     
-        // pintarWeb (strHTML, '#popup')
+        pintarWeb (itemSeleccionado.material, '#material');
+        pintarWeb (itemSeleccionado.title, '#title');
+        pintarWeb (itemSeleccionado.description, '#description');
+        pintarWeb (itemSeleccionado.color, '#color');
+        pintarWeb (itemSeleccionado.price, '#price');
+        
+
         
         //Quiero que cuando haga clic fuera de la imagen me cierre el pop up:
         let nodoFondo = document.querySelector( '.zara__fondo' );
@@ -198,7 +207,6 @@ function pintarWeb(mensaje, identificador) {
         price:"29,95 eur",
         material: "97% poliéster · 2% poliamida · 1% elastodieno"
 
-
       },
       {
         title:"Vestido Bordados Perforados Cinturón",
@@ -217,6 +225,14 @@ function pintarWeb(mensaje, identificador) {
         material: "Tejido principal: 98% viscosa · 2% elastano"
       },
       {
+        title:"Vestido Mini",
+        image:"https//...",
+        description:"Vestido entallado de escote cuadrado y tirantes",
+        color: "Negro | 0264/316",
+        price:"19,95 eur",
+        material: "52% lino · 48% algodón"
+      },
+      {
         title:"Vestido Midi Tirantes",
         image:"https//...",
         description:"Vestido confeccionado con tejido en mezcla de lino y algodón. Escote recto y tirantes finos. Cintura elástica. Bajo con aberturas laterales. Cierre frontal con botones forrados a tono",
@@ -233,15 +249,56 @@ function pintarWeb(mensaje, identificador) {
         material: "100% algodón"
       },
       {
-        title:"Vestido Mini",
+        title:"Peto Pespuntes",
         image:"https//...",
-        description:"Vestido entallado de escote cuadrado y tirantes.",
-        color: "Negro | 0264/316",
-        price:"19,95 eur",
-        material: "68% poliéster · 26% viscosa · 6% elastano"
+        description:"Peto de escote recto con tirantes ajustables. Bolsillo de plastrón en pecho, en cadera y en espalda. Costuras combinadas a contraste.",
+        color: "Blanco roto | 3175/001",
+        price:"39,95 eur",
+        material: "58% liocel · 42% algodón"
+      },
+      {
+        title:"Vestido Punto Flecos",
+        image:"https//...",
+        description:"Vestido de punto con escote recto y tirantes. Tejido combinado a contraste en pecho. Bajo acabado en flecos.",
+        color: "Negro / Crudo | 3991/029",
+        price:"39,95 eur",
+        material: "Tejido principal: 100% acrílico · Tejido secundario: 100% algodón"
+      },
+      {
+        title:"Vestido Satinado",
+        description:"Vestido de cuello solapa y escote pico con manga larga acabada en puño. Detalle de nudo en delantero. Cierre con cremallera lateral oculta en costura.",
+        color: "Naranja | 4688/309",
+        price:"29,95 eur",
+        material: "97% viscosa · 3% elastano"
+      },
+      {
+        title:"Vestido Satinado Cut Out",
+        description:"Vestido midi de escote recto con tirantes finos ajustables. Bajo con abertura en espalda. Cierre con ganchos metálicos en espalda.",
+        color: "Rosa | 2662/331",
+        price:"39,95 eur",
+        material: "Exterior: 100% algodón · Forro: 100% poliester"
+      },
+      {
+        title:"Vestido Satinado Cut Out",
+        description:"Vestido midi de escote recto con tirantes finos ajustables. Bajo con abertura en espalda. Cierre con ganchos metálicos en espalda.",
+        color: "Rosa | 2662/331",
+        price:"39,95 eur",
+        material: "Exterior: 100% algodón · Forro: 100% poliester"
+      },
+      {
+        title:"Vestido Largo Satinado",
+        description:"Vestido largo satinado de cuello solapa y manga larga acabado en puño. Detalle de abertura en cintura. Bajo acabado en línea evasé. Cierre frontal con botones y en espalda con cremallera oculta en costura.",
+        color: "Verdoso | 7563/043",
+        price:"59,95 eur",
+        material: "97% viscosa · 3% elastano"
+      },
+      {
+        title:"Mono Cut Out Lateral",
+        description:"Mono corto de escote pico con solapa y manga larga con hombreras. Detalle de aberturas elásticas en cintura. Cierre frontal con botones",
+        color: "Crudo | 2701/688",
+        price:"49,95 eur",
+        material: "62% poliéster · 33% viscosa · 5% elastano"
       },
   ]
 
-  let indiceSeleccionado = 0
-  let itemSeleccionado = items[ indiceSeleccionado ] 
-
+  
