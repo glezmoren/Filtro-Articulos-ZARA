@@ -191,16 +191,55 @@ function pintarWeb(mensaje, identificador) {
 //lista con cada articulo
   let items = [
       {
-        title:"AAAA",
+        title:"Vestido Mini Punto",
         image:"https//...",
-        description:"",
-        images:[
-            "https://...",
+        description:"Vestido de escote barco y manga corta. Detalle de frunce en delantero. Tejido efecto arrugado.",
+        color: "Fucsia | 1822/059",
+        price:"29,95 eur",
+        material: "97% poliéster · 2% poliamida · 1% elastodieno"
 
-        ],
 
-
-      }
+      },
+      {
+        title:"Vestido Bordados Perforados Cinturón",
+        image:"https//...",
+        description:"Vestido midi de escote pico y manga larga. Cinturón lazada en mismo tejido. Detalle de bordados perdorados. Forro interior combinado a tono. Cierre lateral con cremallera oculta en costura.",
+        color: "Naranja flúor | 7788/932",
+        price:"69,95 eur",
+        material: "100% algodón"
+      },
+      {
+        title:"Vestido Satinado Encaje",
+        image:"https//...",
+        description:"Vestido de escote pico y tiramyes finos. Tejido combinado con encaje.",
+        color: "Verde claro | 0219/847",
+        price:"29,95 eur",
+        material: "Tejido principal: 98% viscosa · 2% elastano"
+      },
+      {
+        title:"Vestido Midi Tirantes",
+        image:"https//...",
+        description:"Vestido confeccionado con tejido en mezcla de lino y algodón. Escote recto y tirantes finos. Cintura elástica. Bajo con aberturas laterales. Cierre frontal con botones forrados a tono",
+        color: "Khaki | 8372/073",
+        price:"35,95 eur",
+        material: "52% lino · 48% algodón"
+      },
+      {
+        title:"Peto Denim Wide Leg",
+        image:"https//...",
+        description:"Peto de escote recto y tirantes anchos ajustables con botones. Bolsillos de plastrón en delantero y espalda. Pernera ancha.Cierre lateral con cremallera metálica",
+        color: "Azul medio | 7484/172",
+        price:"39,95 eur",
+        material: "100% algodón"
+      },
+      {
+        title:"Vestido Mini",
+        image:"https//...",
+        description:"Vestido entallado de escote cuadrado y tirantes.",
+        color: "Negro | 0264/316",
+        price:"19,95 eur",
+        material: "68% poliéster · 26% viscosa · 6% elastano"
+      },
   ]
 
   let indiceSeleccionado = 0

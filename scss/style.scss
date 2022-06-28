@@ -133,7 +133,7 @@
         z-index: 2;
     }
     &__cuidados{
-        width: 30%;
+        width: 20%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
@@ -150,6 +150,12 @@
         font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
         font-weight: 300;
+        &.ext{
+            margin: 0;
+        }
+        &.mas{
+            text-decoration: underline;
+        }
     }
     &__pext{
         text-transform: none;
@@ -158,12 +164,12 @@
         font-weight: 300;
     }
     &__producto{
-        width: 40%;
+        width: 30%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
-        margin: 0 2rem 0 4rem;
+        margin: 0 2rem 0 1rem;
     
     }
     &__h2{
@@ -184,7 +190,9 @@
     }
 
     &__tallas{
+        width: 100%;
         border-bottom: 1px solid black  ;
+        border-top: 1px solid black;
     }
 
     &__talla{
