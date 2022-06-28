@@ -92,37 +92,60 @@ for (let i=0; i < listaImg.length; i ++){
     listaImg[ i ].addEventListener('click', function(){
         console.log( 'Clic en la imagen' );
         
-        console.log( this )
+        console.log( this ) 
 
+        // let parent = this.parentNode.parentNode;// accedo a cualquier Padre, en este caso a dos por arriba, el li, si solo lo pusiera una vez accedería al a
+        let parent_li = this.closest( '.zara__li' );//esta forma es mejor porque accedo seguro al li, de la manera anterior si quito por ejemplo el a entonces ya con el doble parentNode no accedería al li sino a un elemento en una posición anyerior al mismo 
+        console.log( 'parent' ) 
+        console.log( parent ) 
+        console.log( 'parent_li' ) 
+        console.log( parent_li ) 
+        let indiceSeleccionado=parent_li.dataset.numeroimagen;
+        console.log( items[indiceSeleccionado] );
+        let itemSeleccionado = items[indiceSeleccionado];
+        //hago que aparezca el popup (le añado la clase activo)
         let nodoPopup = document.querySelector( '.zara__popup');
         nodoPopup.classList.add ('activo');
-
-        let nodoSrc = this.querySelector('src');
+        
+        //con this ya tengo la imagen que clico y ahora tengo que cambiar el atributo de la imagen que voy a pintar por el atriburo de la imagen que clico
+        //cojo el atributo src de la imagen que clicamos (this)
+        let nodoSrc = this.getAttribute('src');
         console.log (nodoSrc)
 
-        
-
-        let strHTML = `<div class="zara__fondo"></div><img`+ this +  `alt="" class="zara__grande">`;
-        
-        //tengo que cambiar el src
-       
+        //añado el atributro src a la cadena de texto para pintarla
+        // let strHTML = `<div class="zara__fondo">${ itemSeleccionado.title} </div><img src="`+ nodoSrc +`" alt="" class="zara__grande"><svg xmlns="http://www.w3.org/2000/svg"  class="zara__close" viewBox="0 0 16 16">
+        // <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        // </svg>`;
     
-        pintarWeb (strHTML, '#popup')
+        // pintarWeb (strHTML, '#popup')
+        
+        //Quiero que cuando haga clic fuera de la imagen me cierre el pop up:
+        let nodoFondo = document.querySelector( '.zara__fondo' );
+        console.log( nodoFondo )
+        
+        nodoFondo.addEventListener( 'click' , function(){
+        console.log('clic en fondo')
+        let nodoPopup = document.querySelector( '#popup');
+        nodoPopup.classList.remove('activo');
+        });
+        let nodoClose = document.querySelector( '.zara__close' );
+        console.log( nodoClose )
+
+        nodoClose.addEventListener( 'click' , function(){
+        console.log('clic en close')
+        let nodoPopup = document.querySelector( '#popup');
+        nodoPopup.classList.remove('activo');
+        });
 
     });
-    
 
 };
 
-function pintarWeb(mensaje, identificador) {
-    let nodoDatos = document.querySelector(identificador);
-    console.log(nodoDatos);
-    nodoDatos.innerHTML = mensaje;
-  }
 
 
 
-//hago una función que me añada la negrita con los parametros: etiqueta (para seleccionar las etiqueta a la que quiero acceder) la clase (que quiero primero quitar a todas y cada una de ellas y luego añadir a la que clico) y el button (es el this, para que me funcione y acceda al que clico tengo que ponerlo como parámetro porque la función esta aparte definida porque la quiero reutilizar y no puede acceder al clic)
+
+//función para que me añada la negrita con los parametros: etiqueta (para seleccionar las etiqueta a la que quiero acceder) la clase (que quiero primero quitar a todas y cada una de ellas y luego añadir a la que clico) y el button (es el this, para que me funcione y acceda al que clico tengo que ponerlo como parámetro porque la función esta aparte definida porque la quiero reutilizar y no puede acceder al clic)
 function añadirNegrita( etiqueta, clase ,button){
     let listaButton = document.querySelectorAll(etiqueta);
     console.log(listaButton);
@@ -134,6 +157,7 @@ function añadirNegrita( etiqueta, clase ,button){
 };
 
 //para que el filtro de imágenes me funcione siempre tengo que, antes de ocultar los que quiero, mostrar todos, para siempre que hago clic en uno de los botones partir del mismo punto porque sino solo me funcionará el boton que pulse primero, si pulso cortos y luego largos, en largos no se va a mostrar nada porque cortos me habrá ocultado los largos y ya no se mostraría ninguno 
+//función para que me muestre lo que quiero:
 
 function mostrarElementoDeLaLista( etiqueta ){
 
@@ -144,7 +168,7 @@ function mostrarElementoDeLaLista( etiqueta ){
     }
 }
 
-//hago una función para que me oculte los que quiero ( después de aplicar la función de mostrar todos )
+//función para que me oculte los que quiero ( después de aplicar la función de mostrar todos )
 
 function ocultarElementoDeLaLista( etiqueta ){
 
@@ -155,4 +179,30 @@ function ocultarElementoDeLaLista( etiqueta ){
     }
 }
 
+//función para pintar en la web:
+function pintarWeb(mensaje, identificador) {
+    let nodoDatos = document.querySelector(identificador);
+    console.log(nodoDatos);
+    nodoDatos.innerHTML = mensaje;
+  }
+
+
+
+//lista con cada articulo
+  let items = [
+      {
+        title:"AAAA",
+        image:"https//...",
+        description:"",
+        images:[
+            "https://...",
+
+        ],
+
+
+      }
+  ]
+
+  let indiceSeleccionado = 0
+  let itemSeleccionado = items[ indiceSeleccionado ] 
 

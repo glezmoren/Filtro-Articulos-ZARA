@@ -7,6 +7,9 @@
     <title>ZARA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -37,10 +40,10 @@
         <div class="zara">
             <div class="zara__wrapper">
                 <ul class="zara__grid">
-                    <li class="zara__li corto">
+                    <li class="zara__li corto" data-numeroImagen="0" data-description="" data-precio="">
                         <a href="#" class="zara__a"><img src="assets/rosa_corto.jpg" alt="VESTIDO MINI PUNTO" class="zara__img" loading="lazy"></a>
                     </li>
-                    <li class="zara__li midi"><a href="#" class="zara__a"><img src="assets/naranja_midi.jpg" alt="VESTIDO BORDADOS PERFORADOS CINTURON" class="zara__img" loading="lazy"></a></li>
+                    <li class="zara__li midi" data-numeroImagen="1"><a href="#" class="zara__a"><img src="assets/naranja_midi.jpg" alt="VESTIDO BORDADOS PERFORADOS CINTURON" class="zara__img" loading="lazy"></a></li>
                     <li class="zara__li largo"><a href="#" class="zara__a"><img src="assets/verde_largo.jpg" alt="VESTIDO SATINADO ENCAJE" class="zara__img" loading="lazy"></a></li>
                     <li class="zara__li corto"><a href="#" class="zara__a"><img src="assets/negro_corto.jpg" alt="VESTIDO MINI" class="zara__img" loading="lazy"></a></li>
                     <li class="zara__li midi"><a href="#" class="zara__a"><img src="assets/beige_midi.jpg" alt="VESTIDO MIDI TIRANTES" class="zara__img" loading="lazy"></a></li>
@@ -59,7 +62,33 @@
             </div>
             <div class="zara__popup" id="popup">
                 <div class="zara__fondo"></div>
-                <img src="" alt="" class="zara__grande">
+                <div class="zara__contendor">
+                    <div class="zara__cuidados">
+                        <div class="zara__tit">Materiales, cuidados y origen</div>
+                        <div class="zara__tit">Materiales</div>
+                        <p class="zara__p">Trabajamos con programas de seguimiento para garantizar el cumplimiento de los estándares de seguridad, salud y calidad de nuestros productos.</p>
+                        <p class="zara__p">El estándar Green to Wear 2.0 tiene como objetivo minimizar el impacto ambiental de la producción textil. Para ello hemos desarrollado el programa The List de Inditex que nos ayuda a garantizar tanto la limpieza de los procesos productivos como la seguridad y salud de nuestras prendas.</p>
+                        <div class="zara__tit">Exterior</div>
+                        <div class="zara__pext">97% poliéster · 2% poliamida · 1% elastodieno</div>
+                    </div>
+                    <img src="assets/rosa_corto.jpg" alt="" class="zara__grande">
+                    <svg xmlns="http://www.w3.org/2000/svg"  class="zara__close" viewBox="0 0 16 16">x   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>  
+                    <div class="zara__producto">
+                        <h2 class="zara__h2">Vestido mini punto</h2>
+                        <p class="zara__descrip minus">Vestido de escote barco y manga corta. Detalle de frunce en delantero. Tejido efecto arrugado</p>
+                        <p class="zara__descrip">Fucsia | 1822/059</p>
+                        <p class="zara__descrip">29,95 eur</p>
+                        <ul class="zara__tallas">
+                            <li class="zara__talla">S</li>
+                            <li class="zara__talla">M</li>
+                            <li class="zara__talla">L</li>
+                        </ul>
+                        <p class="zara__descrip">Guía de tallas</p>
+                        <button class="zara__aniadir">Añadir a la cesta</button>
+                        <p class="zara__descrip">Envíos, cambios y devoluciones</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

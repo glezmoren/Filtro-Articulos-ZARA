@@ -232,7 +232,9 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -248,17 +250,125 @@ body {
 .zara__fondo {
   width: 100%;
   min-height: 100vh;
-  background-color: black;
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  cursor: pointer;
 }
-.zara__grande {
-  width: 200px;
-  height: 400px;
-  background-color: hotpink;
+.zara__contendor {
+  width: 90%;
+  background-color: white;
+  max-width: 1400px;
+  margin: auto;
+  max-height: 745px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
   z-index: 2;
+}
+.zara__cuidados {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 2rem 2rem 0;
+}
+.zara__tit {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.zara__p {
+  text-transform: none;
+  margin: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.zara__pext {
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.zara__producto {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 2rem 0 4rem;
+}
+.zara__h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.zara__descrip {
+  margin: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.zara__descrip.minus {
+  text-transform: none;
+}
+.zara__tallas {
+  border-bottom: 1px solid black;
+}
+.zara__talla {
+  margin: 0.3rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.zara__aniadir {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: black;
+  color: white;
+}
+.zara__grande {
+  width: 32%;
+  position: relative;
+  z-index: 3;
+}
+.zara__close {
+  width: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
 }
