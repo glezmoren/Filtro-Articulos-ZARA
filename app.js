@@ -279,13 +279,6 @@ function pintarWeb(mensaje, identificador) {
         material: "Exterior: 100% algodón · Forro: 100% poliester"
       },
       {
-        title:"Vestido Satinado Cut Out",
-        description:"Vestido midi de escote recto con tirantes finos ajustables. Bajo con abertura en espalda. Cierre con ganchos metálicos en espalda.",
-        color: "Rosa | 2662/331",
-        price:"39,95 eur",
-        material: "Exterior: 100% algodón · Forro: 100% poliester"
-      },
-      {
         title:"Vestido Largo Satinado",
         description:"Vestido largo satinado de cuello solapa y manga larga acabado en puño. Detalle de abertura en cintura. Bajo acabado en línea evasé. Cierre frontal con botones y en espalda con cremallera oculta en costura.",
         color: "Verdoso | 7563/043",
@@ -298,6 +291,34 @@ function pintarWeb(mensaje, identificador) {
         color: "Crudo | 2701/688",
         price:"49,95 eur",
         material: "62% poliéster · 33% viscosa · 5% elastano"
+      },
+      {
+        title:"Vestido Volumen frunces",
+        description:"Vestido corto ajustado de escote pico y hombros descubiertos. Detalle de aplicación de tejido con volumen y pliegues combinado a tono",
+        color: "Amarillo | 1165/293",
+        price:"25,95 eur",
+        material: "74% viscosa · 23% poliamida · 3% elastano"
+      },
+      {
+        title:"Mono Satinado Cut Out",
+        description:"Mono de escote recto con frunces delanteros y tirante fino con botones. Detalle de abertura en cintura. Pernera ancha. Cierre en espalda con cremallera oculta en costura.",
+        color: "Fresa | 3683/673",
+        price:"45,95 eur",
+        material: "Exterior: 100% poliéster · Forro: 100% poliéster"
+      },
+      {
+        title:"Vestido Frunce",
+        description:"Vestido de escote pico y tirantes finos ajustables. Detalle de frunce en pecho.",
+        color: "Verde | 7901/175",
+        price:"19,95 eur",
+        material: "96% poliéster · 4% elastano"
+      },
+      {
+        title:"Vestido Largo Red",
+        description:"Vestido largo de cuello redondo y manga corta. Detalle de abertura en espalda. Acabados en rib. Bajo asimétrico.",
+        color: "Mostaza | 4770/003",
+        price:"29,95 eur",
+        material: "56% poliéster · 43% algodón · 1% elastano"
       },
   ]
 
